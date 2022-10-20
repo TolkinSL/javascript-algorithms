@@ -9,7 +9,15 @@
 */
 
 function fibonacci(n) {
-    // Напишите код здесь
+  let fibArray = [0, 1];
+  let x = 0;
+
+  for (let i = 2; i <= n; i++) {
+    x = fibArray[i - 1] + fibArray[i - 2];
+    fibArray.push(x);
+  }
+
+  return fibArray[n - 1];
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
