@@ -9,7 +9,7 @@
 */
 
 function reverseWords(str) {
-  let str1 = str.split(' ').reverse().join(' ');
+  const str1 = str.split(' ').reverse().join(' ');
   return str1;
 }
 

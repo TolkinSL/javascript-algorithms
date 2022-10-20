@@ -9,7 +9,7 @@
 */
 
 function fibonacci(n) {
-  let fibArray = [0, 1];
+  const fibArray = [0, 1];
   let x = 0;
 
   for (let i = 2; i <= n; i++) {

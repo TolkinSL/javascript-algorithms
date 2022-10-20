@@ -9,11 +9,13 @@
 */
 
 function anagram(str1, str2) {
+  if (str1 === str2) return false;
+
   str1 = str1.toLowerCase().split('');
   str2 = str2.toLowerCase().split('');
   
-  let newStr1 = str1.sort().join('');
-  let newStr2 = str2.sort().join('');
+  const newStr1 = str1.sort().join('');
+  const newStr2 = str2.sort().join('');
   
   return newStr1 === newStr2;
 }

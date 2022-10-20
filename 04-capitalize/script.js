@@ -7,12 +7,12 @@
 */
 
 function capitalize(str) {
-  let arrayStr = str.split(' ');
+  const arrayStr = str.split(' ');
 
   for (let i = 0; i < arrayStr.length; i++) {
     if (arrayStr[i] != '') arrayStr[i] = arrayStr[i].charAt(0).toUpperCase() + arrayStr[i].slice(1);
   }
-  let newStr = arrayStr.join(' ');
+  const newStr = arrayStr.join(' ');
   return newStr;
 }
 
